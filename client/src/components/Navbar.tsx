@@ -1,37 +1,34 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { IoMdArrowDropdown } from "react-icons/io";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <>
-      <nav className="fixed top-0 flex georama tracking-widest p-4 max-w-7xl gap-[12vw] items-center justify-center mx-auto">
+      <nav className="absolute top-0 flex georama tracking-widest p-4 max-w-7xl gap-[12vw] items-center justify-center mx-auto">
         <ul className="flex gap-4 p-1 items-center justify-left ">
-          <div className="h-10 w-10 rounded-full bg-[#D9D9D9]"></div>
+          <img src="/logo.png" alt="" />
+          <div className="font-bold">Armer</div>
         </ul>
         <div className="flex font-medium gap-10 items-center">
           <ul className="flex gap-2 items-center ">
             <Link to="/">Home</Link>
           </ul>
           <ul className="flex gap-2 items-center ">
-            <Link to="/support">About</Link>
+            <Link to="/about">About</Link>
           </ul>
           <ul className="flex gap-2 items-center ">
-            <Link to="/help">Resources</Link>
+            <Link to="/therapy">Therapy</Link>
           </ul>
           <ul className="flex gap-2 items-center ">
-            <Link to="/help">Contact</Link>
+            <Link to="/community">Community</Link>
           </ul>
         </div>
         <div className="flex gap-4">
           <ul className="flex gap-2 py-2 px-8 bg-black text-white rounded-md items-center ">
-            <Link to="/help">login</Link>
+            <Link to="/help">Chatbot</Link>
           </ul>
-          <ul className="flex gap-2  py-2 px-8 border rounded-md items-center ">
+          {/* <ul className="flex gap-2  py-2 px-8 border rounded-md items-center ">
             <Link to="/help">Signup</Link>
-          </ul>
+          </ul> */}
         </div>
       </nav>
     </>

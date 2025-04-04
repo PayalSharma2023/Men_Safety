@@ -7,25 +7,32 @@ type Props = {};
 const Navbar = (props: Props) => {
   return (
     <>
-      <nav className="flex px-4 max-w-5xl gap-[12vw] items-center justify-end mx-auto">
-        <div className="flex gap-10 items-center">
-        <ul className="flex gap-2 items-center ">
-          <Link to="/">Officials</Link>
-          <IoMdArrowDropdown/>
+      <nav className="fixed top-0 flex georama tracking-widest p-4 max-w-7xl gap-[12vw] items-center justify-center mx-auto">
+        <ul className="flex gap-4 p-1 items-center justify-left ">
+          <div className="h-10 w-10 rounded-full bg-[#D9D9D9]"></div>
         </ul>
-        <ul className="flex gap-2 items-center ">
-          <Link to="/support">Support</Link>
-          <IoMdArrowDropdown/>
-        </ul>
-        <ul className="flex gap-2 items-center ">
-          <Link to="/help">Help</Link>
-          <IoMdArrowDropdown/>
-        </ul>
+        <div className="flex font-medium gap-10 items-center">
+          <ul className="flex gap-2 items-center ">
+            <Link to="/">Home</Link>
+          </ul>
+          <ul className="flex gap-2 items-center ">
+            <Link to="/support">About</Link>
+          </ul>
+          <ul className="flex gap-2 items-center ">
+            <Link to="/help">Resources</Link>
+          </ul>
+          <ul className="flex gap-2 items-center ">
+            <Link to="/help">Contact</Link>
+          </ul>
         </div>
-        <ul className="flex gap-4 p-1 items-center ">
-          <Link to="/">Profile</Link>
-          <div className="h-10 w-10 rounded-full bg-[#6B94ED]"></div>
-        </ul>
+        <div className="flex gap-4">
+          <ul className="flex gap-2 py-2 px-8 bg-black text-white rounded-md items-center ">
+            <Link to="/help">login</Link>
+          </ul>
+          <ul className="flex gap-2  py-2 px-8 border rounded-md items-center ">
+            <Link to="/help">Signup</Link>
+          </ul>
+        </div>
       </nav>
     </>
   );

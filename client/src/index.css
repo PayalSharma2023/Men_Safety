@@ -1,1 +1,11 @@
 @import "tailwindcss";
+.bellefair {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.georama {
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+}

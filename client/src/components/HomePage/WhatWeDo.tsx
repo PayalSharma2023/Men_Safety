@@ -36,7 +36,7 @@ const WhatWeDo = () => {
         </Link>
 
         {/* Therapist */}
-        <Link to="/therapist" className="relative w-64 hover:scale-105 transition-transform duration-300">
+        <Link to="/therapy" className="relative w-64 hover:scale-105 transition-transform duration-300">
           <img
             src="/12.png"
             alt="Therapist"

@@ -1,9 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 
-type Props = {};
 
-function Footer({}: Props) {
+function Footer() {
   return (
     <footer className="relative w-full bg-black text-white px-6 py-10 mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">

@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Routes , Route } from "react-router-dom"
+import HomePage from "./pages/HomePage"
 function App() {
 
   return (
-    <div className="font-bold text-3xl">Men safety
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+      </Routes>
+    </Router>
   )
 }
 

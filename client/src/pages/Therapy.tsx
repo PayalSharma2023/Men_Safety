@@ -1,7 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import Navbar from '../components/Navbar';
 
-type Props = {};
 
 const therapists = [
   {
@@ -24,7 +23,7 @@ const therapists = [
   },
 ];
 
-const Therapy = (props: Props) => {
+const Therapy = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 georama">
     <div className="mb-40"><Navbar/></div>

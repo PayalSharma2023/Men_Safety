@@ -1,8 +1,7 @@
-import React from 'react'
+// import React from 'react'
 
-type Props = {}
 
-const Chat = (props: Props) => {
+const Chat = () => {
   return (
     <div>Chat</div>
   )
